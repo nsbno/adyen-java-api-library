@@ -1,4 +1,28 @@
 
+⬇⬇⬇⬇⬇⬇⬇
+
+# HVORDAN LAGE EGEN VERSJON FOR VY
+
+* Få inn upstream changes fra det vi har forket
+* Sjekk ut riktig tag
+* Lag en ny branch
+* Flytt alle filer inn i en ny pakke
+  * Bruk git mv så blir ikke diffen så insane, feks
+  * ```
+    cd src/main/java/com
+    mkdir v13
+    git mv adyen/* v13/
+    mkdir adyen/v13
+    git mv v13/* adyen/v13
+    ```
+  * Gjør samme for test-mappa
+  * Kjør så search&replace og bytt ut alle pakkerefaranser fra `com.adyen` til `com.adyen.v13`
+* Se på endringene gjort i pom.xml her, gjør tilsvarende i din branch
+* Kopier over mavenrealease-scriptet og kjør det (evt bare kjør kommandoen direkte)
+
+⬆⬆⬆⬆⬆⬆
+
+# GAMMELT UNDER
 
 [![Build Status](https://travis-ci.org/Adyen/adyen-java-api-library.svg?branch=master)](https://travis-ci.org/Adyen/adyen-java-api-library)
 [![Coverage Status](https://coveralls.io/repos/github/Adyen/adyen-java-api-library/badge.svg?branch=master)](https://coveralls.io/github/Adyen/adyen-java-api-library?branch=master)
