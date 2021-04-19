@@ -3,7 +3,7 @@
     <groupId>no.vy</groupId>
     <artifactId>adyen-java-api-library-v13.1-fork</artifactId>
     <packaging>jar</packaging>
-    <version>13.1.0</version>
+    <version>13.1.1-SNAPSHOT</version>
     <name>Adyen Java API Library</name>
     <description>Adyen API Client Library for Java</description>
     <url>https://github.com/adyen/adyen-java-api-library</url>
@@ -28,7 +28,7 @@
     </properties>
     <scm>
         <developerConnection>scm:git:git@github.com:nsbno/adyen-java-api-library.git</developerConnection>
-      <tag>v13.1.0</tag>
+      <tag>HEAD</tag>
   </scm>
     <build>
         <plugins>
